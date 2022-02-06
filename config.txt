@@ -1,1 +1,2 @@
-lastFMKey=
+lastFM_key=
+lastFM_username=
