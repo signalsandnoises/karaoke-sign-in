@@ -1,4 +1,4 @@
-## Match the local karaoke place against your listening history
+## Sign-in to the local karaoke place and get song recommendations
 
 This evening project starts with a short conversation the night before:
 
@@ -27,7 +27,6 @@ Then I wrote this script to pull my listening history from my Last.FM profile an
 
 4. Step 3 will likely fail to run because you need some package dependencies. Read the error message, install what it says, and GOTO step 3. 
 
-----
 
 ### Design
 
