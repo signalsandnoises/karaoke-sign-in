@@ -27,6 +27,7 @@ Then I wrote this script to pull my listening history from my Last.FM profile an
 
 4. Step 3 will likely fail to run because you need some package dependencies. Read the error message, install what it says, and GOTO step 3. 
 
+Once the script has finished running, the output will be stored in a tab-separated file `songs.tsv`. Read it with a text-editor or spreadsheet software.
 
 ### Design
 
