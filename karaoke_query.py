@@ -10,8 +10,8 @@ from fuzzywuzzy import fuzz
 # Tuple format:
 #   (artist, track, code, version)
 def getKaraokeSongs(artist):
-    artist = processArtist(artist)
-    query = f"https://search.healsonic.com/assets/php/search.php?kw={artist}&lang=English"
+    artist_processed = processArtist(artist)
+    query = f"https://search.healsonic.com/assets/php/search.php?kw={artist_processed}&lang=English"
     res = requests.get(query)
     if (res.status_code != 200):
         raise ConnectionError("Query to HealSonic Karaoke was not completed successfully")
