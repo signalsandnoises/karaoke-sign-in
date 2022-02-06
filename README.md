@@ -25,3 +25,10 @@ Then I wrote this script to pull my listening history from my Last.FM profile an
 3. Run `main.py` with Python.
 
 4. Step 3 will likely fail to run because you need some package dependencies. Read the error message, install what it says, and GOTO step 3. 
+
+----
+
+####Design
+
+This script will take a while to run. I don't want to overload my local karaoke's database, so I space my queries out randomly.
+The default mean period is 0.3 seconds per artist. This may be adjusted in `main.py`.
