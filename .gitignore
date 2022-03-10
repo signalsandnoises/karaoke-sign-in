@@ -1,0 +1,8 @@
+__pycache__/
+.vscode/
+*venv/
+
+config.ini
+artists.*sv
+songs.*sv
+
