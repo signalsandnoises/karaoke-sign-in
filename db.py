@@ -23,7 +23,7 @@ class DB(object):
         except Exception as e:
             print('db table creation failed:', e)
     
-    def popluate(self, data: list) -> None:
+    def populate(self, data: list) -> None:
         try:
             self.cur.executemany('INSERT INTO music (id, v, title, artist) '
                             'VALUES (:r, :v, :t, :a)', data) 

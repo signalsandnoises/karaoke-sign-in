@@ -33,7 +33,7 @@ artists = [artist[:-1] for artist in artist_file.readlines()]
 artist_file.close()
 
 ## Fetch all available songs from HealSonic
-print(f"\n{Style.DIM}Fetching all available songs from HealSonic...{Style.RESET_ALL}")
+print(f"\n{Style.DIM}Fetching all available songs from HealSonic...{Style.RESET_ALL}", end="")
 query = f"https://search.healsonic.com/assets/php/search.php?kw=&lang={SONG_LANGUAGE.title()}"
 res = requests.get(query)
 if (res.status_code != 200):
@@ -43,8 +43,9 @@ data = res.json()
 ## Populate in-memory database with available songs
 db = DB()
 try: 
-    print(f"{Style.DIM}Populating in-memory database with availble songs...{Style.RESET_ALL}")
-    db.popluate(data)
+    print(f"{Style.DIM}Populating in-memory database with available songs...{Style.RESET_ALL} ", end="")
+    db.populate(data)
+    print("Done", end="\n")
 except Exception as e:
     print(e)
     sys.exit('Error: database population failed')

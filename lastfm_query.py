@@ -23,7 +23,8 @@ totalPages = int(res.json()['artists']['@attr']['totalPages'])
 
 
 ## Iterate through pages, scraping the artists IN ORDER (by decreasing playcount)
-## This makes a call to the last.fm API for each page of 50 artists.
+## This makes a call to the last.fm API for each page of 1000 artists.
+## Returns a list of artist names
 def scrapeArtists():
     artist_names = []
     for page in range(1, totalPages+1):
