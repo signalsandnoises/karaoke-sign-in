@@ -1,6 +1,6 @@
 # INSTRUCTIONS: include your lastFM API token and username in config.txt, then run this script
 # This script will use lastfm_query.py to query your last.fm data, and write artists.csv
-# This script will then read artists.csv, query the karaoke place for each artist, and write songs.tsv
+# This script will then read artists.csv, query the karaoke place for each artist, and write songs.tsv 
 
 import os.path
 import karaoke_query
